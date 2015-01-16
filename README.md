@@ -15,8 +15,8 @@ exports.handler = function(event, context) {
     var sends = event.Records
         .filter(decodeKinesis.filter)
         .map(decodeKinesis.decode)
-        .forEac(function(data) {
-            // Do something!
+        .forEach(function(data) {
+            // Do something nice!
         })
 ```
 
