@@ -12,12 +12,13 @@ Example / 例
 var decodeKinesis = require('decode-kinesis')
 
 exports.handler = function(event, context) {
-    var sends = event.Records
+    event.Records
         .filter(decodeKinesis.filter)
         .map(decodeKinesis.decode)
         .forEach(function(data) {
             // Do something nice!
         })
+    }
 ```
 
 ## API
