@@ -1,0 +1,1 @@
+import decodeKinesis from './index'
